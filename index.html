@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>3D Animation</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">moRph</a>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contacts</a>
+      </nav>
+    </header>
+
+    <model-viewer
+      src="./img/phoenix_bird.glb"
+      id="phoenix-model"
+      camera-orbit="0deg 30deg"
+      autoplay
+    ></model-viewer>
+
+    <section class="home">
+      <h1>3D Animation</h1>
+    </section>
+
+    <section class="about">
+      <div class="about-content">
+        <h2>About Falcons</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          temporibus doloremque doloribus id molestiae odit enim facilis libero
+          laudantium consequatur!
+        </p>
+        <a href="#">View More</a>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-content">
+        <div class="outer">
+          <div class="inner">
+            <img src="./img/1.png" alt="Falcon" />
+          </div>
+        </div>
+
+        <div class="outer">
+          <div class="inner"></div>
+        </div>
+
+        <div class="outer">
+          <div class="inner">
+            <img src="./img/1.png" alt="Falcon" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <form class="contact-form">
+        <h2>Contact</h2>
+        <input type="text" placeholder="Your Name" required />
+        <input type="text" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
